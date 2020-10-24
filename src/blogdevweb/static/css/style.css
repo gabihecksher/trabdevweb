@@ -3,14 +3,6 @@ body {
     font-family: 'Spartan', sans-serif;
     font-weight: 400;
 }
-/*
-.content {
-    border:3px solid;
-    border-color: #800080;
-    border-radius: 20px;
-    padding: 10%;
-    background: #f8f8f8;
-}*/
 
 h2 {
     color: #800080;
@@ -21,7 +13,6 @@ h2 {
 }
 
 fieldset{
-    /*border: 1px black solid;*/
     width: 600px;
     border:3px solid;
     border-color: #800080;
@@ -38,8 +29,10 @@ legend {
     width: 230px;
 }
 
-.input {
-    border-radius: 6px;
+.page-title {
+    text-align: center;
+    border-bottom: 3px solid;
+    margin-bottom: 20px;
 }
 
 /* by default bootstrap adds a blue glow when form-control is selected */
@@ -47,6 +40,14 @@ legend {
 .form-control:hover {
   border-color: #8B008B;
   box-shadow: inset 0 1px 1px rgba(128, 0, 128, 0.075), 0 0 8px rgba(128, 0, 128, 0.6);
+}
+.form-control:focus {
+  border-color: #8B008B;
+  box-shadow: inset 0 1px 1px rgba(128, 0, 128, 0.075), 0 0 8px rgba(128, 0, 128, 0.6);
+}
+
+.form-group {
+    margin: 30px 0px;
 }
 
 .input-wrapper {
@@ -90,249 +91,53 @@ button, .save-button {
     cursor: pointer;
     transition: .3s;
     margin: 20px;
-    /*margin: 10px 100px;*/
+    width: 170px;
+    height: 40px;
 }
 button:hover, .save-button:hover {
     background-color: #8B008B;
     transition: .2s;
 }
 
-/*
-
-h3 {
-    color: #192A3E;
+/* Navbar style */
+nav{
+    background-color: #800080;
 }
 
-li {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    color: #334D6E;
-    cursor: pointer;
-}
-
-button:focus, .save-button:focus {
-    outline: none;
-}
-
-header {
-    padding: 20px 20%;
-    background-color: #fafafa;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.1);
-}
-
-header p {
-    font-size: 1.3em;
-    font-weight: 900;
-    color: #334D6E;
-    display: inline;
-    position: relative;
-    bottom: 8px;
-}
-
-header img {
-    height: 40px;
-    vertical-align: sub;
-}
-
-.chart {
-    margin-bottom: 20px;
-}
-
-index style
-
-.new-entry-added  {
-    margin: 20px;
-}
-
-.container-flex {
-    margin: 0 0 40px 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-.container-flex p {
-    line-height: 22px;
-}
-
-.container-flex span {
-    font-weight: 900;
-    color: #334D6E;
-}
-
-.container i {
-    font-size: 20px;
-    position: relative;
-    top: 5px;
-}
-.icon-spent {
-    color: #F7685B;
-}
-.icon-income {
-    color: #3e95cd;
-}
-.icon-save {
-    color: #2ED47A;
-}
-
-.card-flex {
-    background-color: #fafafa;
-    width: 400px;
-    height: 280px;
-    overflow: auto;
-    overflow-x: hidden;
-    padding: 15px;
-    box-shadow: -3px 4px #C2CFE0;
-    border-radius: 15px;
-}
-.card-chart {
-    height: auto;
-    overflow: hidden;
-    height: auto;
-}
-
-.card-flex ul li, ul li {
-    line-height: 40px;
-}
-
-.card-flex .card-date {
+.nav-link {
     float: right;
-    color: #999;
-}
-
-.container-flex .graph-img {
-    width: 250px;
-}
-.container-chart {
-    height: 400px;
-}
-
-.flex-right {
-    height: 310px;
-    width: 35%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.previous-month p {
-    color: #885AF8;
-    border: #885AF8 solid 2px;
-    border-radius: 8px;
-    padding: 3px;
-    width: 54%;
+    color: #f0f0f0;
     text-align: center;
-    margin: 25px 40px;
-    transition: .1s;
-}
-.previous-month p:hover {
-    transition: .1s;
-    color: #885AF8;
-    border-bottom: #885AF8 solid 4px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
 }
 
-.categories-list {
-    margin-top: 15px;
-    padding-left: 10px;
-    box-shadow: -3px 0px #C2CFE0;
-    border-radius: 2px;
+.nav-link:hover {
+    color: #f0f0f0;
 }
 
-form
 
-.card-new-entry {
-    background-color: #fafafa;
-    width: 40%;
-    padding: 15px;
-    box-shadow: -3px 4px #C2CFE0;
-    border-radius: 15px;
+.nav-profile-button:after {
+    font-family: 'FontAwesome';
+    right: 40px;
+    bottom: 10%;
+    font-size: 30px;
+    content: '\f007';
+    position: absolute;
 }
 
-.form-input {
-    padding: 10px;
-    border: none;
-    border-bottom: 1px #999 solid;
-    border-radius: 5px 5px 0 0;
-    background: #fafafa;
-}
-.form-input:focus {
-    outline: none;
-    background-color: #f0f0f0;
-    border-radius: 5px;
+.nav-home-button{
+    color: #f0f0f0;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    width: 160px;
+    border-right: 3px solid;
 }
 
-.card-new-entry label {
-    padding-top: 10px;
-    display: block;
-} 
-
-.card-new-entry span {
-    color: #999;
-    font-weight: normal;
-    font-size: 0.9em;
-    display: block;
-    margin: 5px 0 10px 0;
+.nav-home-button:hover {
+    color: #f0f0f0;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
 }
 
-.card-new-entry li {
-    line-height: 0;
-}
-
-.errorlist li {
-    line-height: 1;
-    color: #F7685B;
-}
-
-.radio-input:focus {
-    outline: 1px #F7685B solid;
-    outline-style: dotted;
-}
-
-.save-button {
-    display: block;
-    margin: 5px auto;
-}
-
-.card-new-entry .back-button, .card-new-entry a span {
-    display: inline;
-}
-
-.container-img {
-    width: 50%;
-}
-
-.scene-img {
-    width: 100%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%)
-
-}
-
-month
-
-.month-card {
-    width: 45%;
-}
-
-scrollbar
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-}
-
-::-webkit-scrollbar-thumb {
-    background: #C2CFE0; 
-    border-radius: 5px;
-}
-  
-::-webkit-scrollbar-thumb:hover {
-    background: #888; 
-}*/
