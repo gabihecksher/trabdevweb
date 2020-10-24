@@ -1,0 +1,312 @@
+body {
+    background: #f0f0f0;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+    color: #800080;
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+.input {
+    border-radius: 6px;
+}
+
+/* by default bootstrap adds a blue glow when form-control is selected */
+/* this changes glow color to purple */
+.form-control:focus {
+  border-color: #8B008B;
+  box-shadow: inset 0 1px 1px rgba(128, 0, 128, 0.075), 0 0 8px rgba(128, 0, 128, 0.6);
+}
+
+.input-wrapper {
+    display: inline-block;
+    position: relative
+}
+
+/* includes key icon on password input */
+.input-wrapper-password:after {
+    font-family: 'FontAwesome';
+    content: '\f084';
+    position: absolute;
+    right: 30px;
+    top: 6px;
+}
+
+/* includes user icon on legal id input */
+.input-wrapper-legal-id:after {
+    font-family: 'FontAwesome';
+    content: '\f007';
+    position: absolute;
+    right: 30px;
+    top: 6px;
+}
+
+.vertical-center {
+  min-height: 100%; 
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+}
+
+button, .save-button {
+    background-color: #800080;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 6px;
+    color: #fafafa;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+    margin: 20px;
+    /*margin: 10px 100px;*/
+}
+button:hover, .save-button:hover {
+    background-color: #8B008B;
+    transition: .2s;
+}
+
+/*
+
+h3 {
+    color: #192A3E;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #334D6E;
+    cursor: pointer;
+}
+
+button:focus, .save-button:focus {
+    outline: none;
+}
+
+header {
+    padding: 20px 20%;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.1);
+}
+
+header p {
+    font-size: 1.3em;
+    font-weight: 900;
+    color: #334D6E;
+    display: inline;
+    position: relative;
+    bottom: 8px;
+}
+
+header img {
+    height: 40px;
+    vertical-align: sub;
+}
+
+.chart {
+    margin-bottom: 20px;
+}
+
+index style
+
+.new-entry-added  {
+    margin: 20px;
+}
+
+.container-flex {
+    margin: 0 0 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-flex p {
+    line-height: 22px;
+}
+
+.container-flex span {
+    font-weight: 900;
+    color: #334D6E;
+}
+
+.container i {
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+}
+.icon-spent {
+    color: #F7685B;
+}
+.icon-income {
+    color: #3e95cd;
+}
+.icon-save {
+    color: #2ED47A;
+}
+
+.card-flex {
+    background-color: #fafafa;
+    width: 400px;
+    height: 280px;
+    overflow: auto;
+    overflow-x: hidden;
+    padding: 15px;
+    box-shadow: -3px 4px #C2CFE0;
+    border-radius: 15px;
+}
+.card-chart {
+    height: auto;
+    overflow: hidden;
+    height: auto;
+}
+
+.card-flex ul li, ul li {
+    line-height: 40px;
+}
+
+.card-flex .card-date {
+    float: right;
+    color: #999;
+}
+
+.container-flex .graph-img {
+    width: 250px;
+}
+.container-chart {
+    height: 400px;
+}
+
+.flex-right {
+    height: 310px;
+    width: 35%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.previous-month p {
+    color: #885AF8;
+    border: #885AF8 solid 2px;
+    border-radius: 8px;
+    padding: 3px;
+    width: 54%;
+    text-align: center;
+    margin: 25px 40px;
+    transition: .1s;
+}
+.previous-month p:hover {
+    transition: .1s;
+    color: #885AF8;
+    border-bottom: #885AF8 solid 4px;
+}
+
+.categories-list {
+    margin-top: 15px;
+    padding-left: 10px;
+    box-shadow: -3px 0px #C2CFE0;
+    border-radius: 2px;
+}
+
+form
+
+.card-new-entry {
+    background-color: #fafafa;
+    width: 40%;
+    padding: 15px;
+    box-shadow: -3px 4px #C2CFE0;
+    border-radius: 15px;
+}
+
+.form-input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px #999 solid;
+    border-radius: 5px 5px 0 0;
+    background: #fafafa;
+}
+.form-input:focus {
+    outline: none;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.card-new-entry label {
+    padding-top: 10px;
+    display: block;
+} 
+
+.card-new-entry span {
+    color: #999;
+    font-weight: normal;
+    font-size: 0.9em;
+    display: block;
+    margin: 5px 0 10px 0;
+}
+
+.card-new-entry li {
+    line-height: 0;
+}
+
+.errorlist li {
+    line-height: 1;
+    color: #F7685B;
+}
+
+.radio-input:focus {
+    outline: 1px #F7685B solid;
+    outline-style: dotted;
+}
+
+.save-button {
+    display: block;
+    margin: 5px auto;
+}
+
+.card-new-entry .back-button, .card-new-entry a span {
+    display: inline;
+}
+
+.container-img {
+    width: 50%;
+}
+
+.scene-img {
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+
+}
+
+month
+
+.month-card {
+    width: 45%;
+}
+
+scrollbar
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #C2CFE0; 
+    border-radius: 5px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #888; 
+}*/
