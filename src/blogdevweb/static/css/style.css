@@ -206,3 +206,7 @@ nav{
 .button-delete:hover , .button-edit:hover{
 	color: #fff;
 }
+
+.details-container{
+	margin-top:40px !important;
+}
