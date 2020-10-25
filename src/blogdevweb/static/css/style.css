@@ -145,3 +145,16 @@ nav{
     text-align: center !important;
 }
 
+.list-page-title{
+	text-align: center;
+	padding-top:30px;
+	padding-bottom:30px;
+}
+
+.card-title{
+	color: #800080 !important;
+}
+
+.card{
+	margin-bottom:20px !important;
+}
