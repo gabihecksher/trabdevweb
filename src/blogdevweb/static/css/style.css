@@ -141,3 +141,7 @@ nav{
     font-size: 30px;
 }
 
+.horizontal-align-center{
+    text-align: center !important;
+}
+

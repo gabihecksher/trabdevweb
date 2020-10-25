@@ -1,6 +1,6 @@
 const cpf = document.querySelector("#cpf");
 
-nao ta funcionando ainda, mas minha ideia quando o usuário preencher o cpf já aparecer automaticamente os pontos e o hifen
+//nao ta funcionando ainda, mas minha ideia quando o usuário preencher o cpf já aparecer automaticamente os pontos e o hifen
 
 $(document).on('change', '[id$=cpf]', function() {
     cpf.addEventListener("blur", () => {
@@ -9,3 +9,4 @@ $(document).on('change', '[id$=cpf]', function() {
     });
 
 });
+
