@@ -158,3 +158,51 @@ nav{
 .card{
 	margin-bottom:20px !important;
 }
+
+.button-approve, .button-reprove{
+    padding: initial;
+    border: none;
+    border-radius: 6px;
+    color: #fafafa;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+    margin: 5px;
+    width: 170px;
+    height: 40px;
+
+}
+
+.button-approve .fas, .button-reprove .fas{
+	padding-left:10px;
+}
+.button-approve{
+	background-color: #4CAF50;
+}
+
+.button-reprove{
+	background-color: #dc3b2f;
+}
+
+.button-approve:hover{
+	background-color: #4caf509c;
+}
+
+.button-reprove:hover{
+	background-color: #dc3b2fa8;
+}
+
+.button-delete, .button-edit{
+	width:auto;
+	height:auto;
+	padding: 5px;
+	font-weight: normal !important;
+	font-size:12px;
+	margin:0;
+	color: black;
+	background: None;
+	border: None
+}
+.button-delete:hover , .button-edit:hover{
+	color: #fff;
+}
