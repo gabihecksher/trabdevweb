@@ -4,8 +4,14 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/gabri/Documents/NetBeansProjects/BlogDevWeb/src/blogdevweb/templates/login.html</file>
-            <file>file:/C:/Users/gabri/Documents/NetBeansProjects/BlogDevWeb/src/blogdevweb/BlogDevWeb.java</file>
-            <file>file:/C:/Users/gabri/Documents/NetBeansProjects/BlogDevWeb/src/blogdevweb/static/style.css</file>
+            <file>file:/C:/Users/gabri/Documents/NetBeansProjects/BlogDevWeb/src/blogdevweb/templates/add_user.html</file>
+            <file>file:/C:/Users/gabri/Documents/NetBeansProjects/BlogDevWeb/src/blogdevweb/templates/list_category.html</file>
+            <file>file:/C:/Users/gabri/Documents/NetBeansProjects/BlogDevWeb/src/blogdevweb/templates/edit_user.html</file>
+            <file>file:/C:/Users/gabri/Documents/NetBeansProjects/BlogDevWeb/src/blogdevweb/templates/list_article.html</file>
+            <file>file:/C:/Users/gabri/Documents/NetBeansProjects/BlogDevWeb/src/blogdevweb/static/css/style.css</file>
+            <file>file:/C:/Users/gabri/Documents/NetBeansProjects/BlogDevWeb/src/blogdevweb/templates/add_comment.html</file>
+            <file>file:/C:/Users/gabri/Documents/NetBeansProjects/BlogDevWeb/src/blogdevweb/templates/add_article.html</file>
+            <file>file:/C:/Users/gabri/Documents/NetBeansProjects/BlogDevWeb/src/blogdevweb/templates/list_user.html</file>
         </group>
     </open-files>
 </project-private>
