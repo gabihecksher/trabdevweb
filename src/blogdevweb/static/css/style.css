@@ -92,10 +92,11 @@ button, .save-button {
     transition: .3s;
     margin: 20px;
     width: 170px;
-    height: 40px;
+    line-height: 10px;
 }
 button:hover, .save-button:hover {
     background-color: #8B008B;
+    color: #fafafa;
     transition: .2s;
 }
 
