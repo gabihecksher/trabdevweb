@@ -160,7 +160,7 @@ nav{
 }
 
 .button-approve, .button-reprove{
-    padding: initial;
+    padding: 10px;
     border: none;
     border-radius: 6px;
     color: #fafafa;
@@ -168,9 +168,8 @@ nav{
     cursor: pointer;
     transition: .3s;
     margin: 5px;
-    width: 170px;
-    height: 40px;
-
+    width: auto;
+    height: auto;
 }
 
 .button-approve .fas, .button-reprove .fas{
@@ -205,4 +204,8 @@ nav{
 }
 .button-delete:hover , .button-edit:hover{
 	color: #fff;
+}
+
+.details-container{
+	margin-top:40px !important;
 }
