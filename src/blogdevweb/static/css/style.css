@@ -118,14 +118,18 @@ nav{
     color: #f0f0f0;
 }
 
+a {
+    color: #8B008B;
+}
 
-.nav-profile-button:after {
-    font-family: 'FontAwesome';
-    right: 40px;
-    bottom: 10%;
-    font-size: 30px;
-    content: '\f007';
-    position: absolute;
+a:hover {
+    color: #8B008B;
+}
+
+.nav-item {
+    color: #f0f0f0;
+    padding: 0px 10px;
+    border-right: 3px solid;
 }
 
 .nav-home-button{
@@ -133,7 +137,6 @@ nav{
     font-family: 'Lobster', cursive;
     font-size: 30px;
     width: 160px;
-    border-right: 3px solid;
 }
 
 .nav-home-button:hover {

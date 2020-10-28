@@ -24,12 +24,45 @@
 	<body>
 	
 	    <nav class="navbar navbar-expand-md">
-                <a class="navbar-brand nav-button nav-home-button" href="list_article.html">Alpha Blog</a>
+                <a class="navbar-brand nav-button nav-home-button nav-item" href="list_article.html">Alpha Blog</a>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                          <a class="nav-link nav-profile-button" href="#"></a>
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Artigos
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="list_article.html">Artigos publicados</a>
+                                <a class="dropdown-item" href="list_article.html">Artigos pendentes</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="add_article.html">Criar artigo</a>
+                            </div>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Categorias
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Artes</a>
+                                <a class="dropdown-item" href="#">Política</a>
+                                <a class="dropdown-item" href="#">Ficção</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="add_category.html">Criar categoria</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Usuários
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="list_user.html">Usuários pendentes</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="add_user.html">Criar usuário</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="nav-link nav-profile-button" href="login.html">Login <i class="fas fa-user"></i></a></li>
                     </ul>
                 </div>
             </nav>
