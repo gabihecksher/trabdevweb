@@ -81,7 +81,7 @@ legend {
   align-items: center;
 }
 
-button, .save-button {
+button, .save-button, .btn {
     background-color: #800080;
     padding: 20px 30px;
     border: none;
@@ -94,7 +94,7 @@ button, .save-button {
     width: 170px;
     line-height: 10px;
 }
-button:hover, .save-button:hover {
+button:hover, .save-button:hover, .btn:hover {
     background-color: #8B008B;
     color: #fafafa;
     transition: .2s;
@@ -143,6 +143,10 @@ a:hover {
     color: #f0f0f0;
     font-family: 'Lobster', cursive;
     font-size: 30px;
+}
+
+.last-nav-link {
+    border: none;
 }
 
 .horizontal-align-center{
